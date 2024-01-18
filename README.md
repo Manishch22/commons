@@ -6,7 +6,7 @@
 
 ## Overview
 As the name suggests, Commons refers to all the common services (also called "kernel") that are used by other modules of MOSIP. The Kernel services are listed below:
-
+ 
 ## Databases
 Refer to [SQL scripts](db_scripts).
 
