@@ -92,7 +92,7 @@ public class OtpValidatorServiceImpl implements OtpValidator<ResponseEntity<OtpV
 		otpUtils.validateOtpRequestArguments(key, otp);
 		OtpValidatorResponseDto responseDto;
 		
-		if(key.length() != 10) {
+		if(key.length() > 10) {
 			responseDto = new OtpValidatorResponseDto();
 			if(validateTotp(key, otp)) {
 				responseDto.setMessage(OtpStatusConstants.SUCCESS_MESSAGE.getProperty());
